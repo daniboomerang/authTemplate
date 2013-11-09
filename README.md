@@ -47,7 +47,7 @@ The gem provides a generator:
 rails generate figaro:install
 ```
 
-The generator creates a **config/application.yml** file and modifies the *.gitignore* file to prevent the file from being checked into a git repository.
+The generator creates a **config/application.yml** file and modifies the **.gitignore** file to prevent the file from being checked into a git repository.
 
 Now that we have a method to set the ENV variables we van proceed to set up the credentials for the SMPT Server (SendGrid).
 
