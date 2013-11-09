@@ -1,0 +1,18 @@
+/**************************/
+/*         MEDIA	          */
+/**************************/
+
+.media-container {
+  padding: 7% 0% 5% 0%;
+}
+
+.image-container {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 23px 23px 23px 23px;
+  -moz-border-radius: 23px 23px 23px 23px;
+  -webkit-border-radius: 23px 23px 23px 23px;
+  border: 9px solid #cdd1ce;
+  border: 5px solid #083E57;
+  background-color: white;  
+}

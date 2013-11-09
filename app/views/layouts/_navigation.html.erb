@@ -1,0 +1,35 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=<%=root_path %>>
+        <%= image_tag "sunyata48.png" %></a>
+    </div>
+    <div class="navbar-collapse collapse">      
+      <ul class="navbar-right">
+        <% if !user_signed_in? && !admin_signed_in?%>  
+          <a class="btn btn-lg btn-custom-orange" href="/users/sign_in" >Sign In </a>
+          <a class="btn btn-lg btn-custom-darkblue" href="/users/sign_up" >Sign Up </a>
+          <div class="btn-group">
+            <button type="button" class="btn btn-custom-bluesky dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="/admins/sign_in">Sign In</a></li>
+              <li><a href="/admins/sign_up">Sign Up</a></li>
+            </ul>
+          </div>
+        <% else %>        
+          <% if user_signed_in? -%>            
+            <%= link_to current_user.email, edit_user_registration_path, :class => 'btn btn-lg btn-custom-darkblue' %>
+          <% end -%>
+          <% if admin_signed_in? -%>
+              <%= link_to current_admin.email, edit_admin_registration_path, :class => 'btn btn-lg btn-custom-darkblue' %>
+              <%= link_to 'Admin Section', admins_path, :class => 'btn btn-lg btn-custom-bluesky' %>         
+          <% end -%>
+          <% if user_signed_in? or admin_signed_in? -%>  
+          <%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => 'btn btn-lg btn-custom-red' %>         
+          <% end -%>
+        <% end -%>  
+      </ul>
+    </div><!--/.nav-collapse -->  
+  </div>
+</div>

@@ -1,0 +1,157 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+/**************************/
+/* Main body and headings */
+/**************************/
+
+.heading, .subheading {
+  font-family: 'snippetregular', sans-serif; 
+  text-align: center;
+}
+.subheading {
+  font-weight: 300;
+}
+p.lead {
+  padding-top: 1.5%;
+  font-size: 24px;
+  line-height: 25px;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+body {  
+  padding-top: 80px;
+  font-family: 'snippetregular', sans-serif; 
+  font-size: 14px;
+  -webkit-box-shadow: 0px 1px 5px rgba(160, 160, 160, 1);
+  -moz-box-shadow:    0px 1px 5px rgba(160, 160, 160, 1);
+  box-shadow:         0px 1px 5px rgba(160, 160, 160, 1);
+}
+a img {
+  border: none;
+}
+a {
+  color: #0000FF;
+}
+
+/*******************************/
+/*          NAVBARS            */
+/*******************************/
+
+.nav{
+
+      background-color: black;
+
+}
+.navbar-default {
+  /*background:url('/assets/backgrounds/blueTriplesBG.jpg'); 
+  background:url('/assets/backgrounds/darkBlueBG.jpg'); 
+  background:url('/assets/backgrounds/blueCirclesBG.jpg');
+  background:url('/assets/backgrounds/redRoofBG.jpg'); 
+  background:url('/assets/backgrounds/whiteBG.jpg');*/
+  font-family: 'snippetregular', sans-serif; 
+  padding-top: 0px;
+  padding-bottom:  0px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 1px 5px rgba(160, 160, 160, 1);
+  -moz-box-shadow:    0px 1px 5px rgba(160, 160, 160, 1);
+  box-shadow:         0px 1px 5px rgba(160, 160, 160, 1);
+ }
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom:  0px;
+
+}
+
+.navbar-nav{
+    padding-top: 13px;
+    line-height: 900;
+}
+
+.navbar-right{
+    padding-top: 18px;
+}
+
+/*******************************/
+/*            ALERTS           */
+/*******************************/
+
+.custom-close {
+  padding: 12px;
+} 
+
+#flash_notice, #flash_alert {
+  padding: 5px 0px;
+  margin: 0px 0;
+  font-family: 'snippetregular', sans-serif; 
+}
+
+#flash_notice {
+  padding: 12px;
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  text-align: center;}
+
+#flash_alert{
+  padding: 12px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  text-align: center;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #b94a48;
+  background-color: #f2dede;
+  text-align: center;
+  font-size: 14px;
+  font: red;
+}  
+
+
+/*******************************/
+/*          FOOTEER            */
+/*******************************/
+
+.footer {
+  color: #cccccc;
+  text-align: center;
+  background:url('/assets/backgrounds/whiteBG.jpg');
+  background:url('/assets/backgrounds/blueBG.jpg');
+  background:url('/assets/backgrounds/darkBlueBG.jpg'); 
+  background:url('/assets/backgrounds/roseBG.jpg'); 
+  background:url('/assets/backgrounds/blueTriplesBG.jpg'); 
+  background:url('/assets/backgrounds/redRoofBG.jpg'); 
+  background:url('/assets/backgrounds/blueCirclesBG.jpg');
+}
+
+.footer p {
+    font-family: 'snippetregular', sans-serif; 
+    font-size: 14px;
+}
+
+.footer a {
+  color: #ccccff;
+}

@@ -1,0 +1,46 @@
+.form-signing {
+  max-width: 330px;
+  padding: 50px 20px 50px 20px;
+  margin: 0 auto;
+}
+
+.form-signing .form-signing-heading,
+.form-signing .checkbox {
+  margin-bottom: 10px;
+}
+.form-signing .checkbox {
+  font-weight: normal;
+}
+.form-signing .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signing .form-control:focus {
+  z-index: 2;
+}
+.form-signing input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signing input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signing-big { 
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.form-signing-big h3 {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'snippetregular', sans-serif; 
+}
