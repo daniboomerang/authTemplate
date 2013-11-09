@@ -47,17 +47,19 @@ The gem provides a generator:
 rails generate figaro:install
 ```
 
-The generator creates a **config/application.yml** file and modifies the .gitignore file to prevent the file from being checked into a git repository.
+The generator creates a **config/application.yml** file and modifies the *.gitignore* file to prevent the file from being checked into a git repository.
 
-Now that we have a method to set the ENV variables we van proceed to set up the credentials for our SMPT Server (SendGrid).
+Now that we have a method to set the ENV variables we van proceed to set up the credentials for the SMPT Server (SendGrid).
 
-Open config/application.yml and set the like this:
+Open **config/application.yml** and set your personal SendGrid credentials like this:
 
 ```
 HOST: 'localhost:3000'
 SENDGRID_USERNAME: "mySendgridUsername"
 SENDGRID_PASSWORD: "mySendgridPassword"
 ```
+
+Remember your credentials will be safe, not pushed to GitHub, since Figaro automatically included the file **application.yml** in **.gitignore**
 
 ### Mail Sender configuration.
 
@@ -80,6 +82,14 @@ Which should be already set up if you added the ENV variables in application.yml
 
 Run the server and use the credentials provided by the rake task to sign in and test the application.
 
+# authTemplate 1.0
+==============================
+
+For the next release:
+
+* AngularJS
+* Styling e-mails
+* Internationalization 
 
 ## License
 
